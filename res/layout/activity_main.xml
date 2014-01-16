@@ -1,0 +1,147 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E5BB81"
+    tools:context=".MainActivity" >
+
+    <LinearLayout 
+    	android:id="@+id/LinearLayout1"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:background="#E5BB81" 
+    	android:orientation="vertical">
+ 		<ImageView
+       		android:layout_width="fill_parent"
+    		android:layout_height="150dip"                                                                                                                                                                                                                                
+    		android:background="@drawable/head"
+    		android:layout_marginLeft="10dip" 
+    		android:layout_marginRight="10dip"
+    		android:layout_marginTop="10dip"
+     		android:contentDescription="@string/app_name"/>
+
+ 		<TableLayout
+ 		    android:id="@+id/tableLayout"
+ 		    android:layout_width="fill_parent"
+ 		    android:layout_height="fill_parent" >
+
+		   	<TableRow 
+		   	     android:layout_width="fill_parent" 
+			     android:layout_height="fill_parent"
+			     android:paddingTop="5dip"
+			     android:layout_marginLeft="5dip"
+			     android:layout_marginRight="5dip">
+		   	     <!-- 1 -->
+		   	     <LinearLayout 
+		   	        android:layout_width="0dip" 
+			     	android:layout_height="fill_parent"
+			     	android:orientation="vertical"
+			     	android:layout_weight="1"
+			     	android:padding="5dip"
+		   	     >
+		   	        <TextView
+		   	             android:id="@+id/textWet"
+		   	             android:layout_width="fill_parent"
+		   	             android:layout_height="127dp"
+		   	             android:background="#FF3366"
+		   	             android:drawableBottom="@drawable/wet"
+		   	             
+		   	             android:gravity="top"
+		   	             android:padding="5dip"
+		   	             android:text="@string/wet"
+		   	             android:textColor="#ffffff"
+		   	             android:textSize="15sp" />
+		   	         <TextView
+		   	             android:id="@+id/textBingxiang"
+		   	             android:layout_width="fill_parent"
+		   	             android:layout_height="126dp"
+		   	             android:layout_marginTop="10dip"
+		   	             android:background="#FF6600"
+		   	             android:drawableBottom="@drawable/bingxiang"
+		   	             android:gravity="top"
+		   	             android:padding="5dip"
+		   	             android:text="@string/bingxiang"
+		   	             android:textColor="#ffffff"
+		   	             android:layout_weight="1"
+		   	             android:textSize="15sp" />
+
+		   	          <TextView
+		   	            android:id="@+id/textSet"
+		   	            android:layout_width="fill_parent" 
+			     		android:layout_height="126dp"
+			    		android:layout_marginTop="10dip"
+			     		android:text="@string/set"
+			     		android:textSize="15sp"
+			     		android:textColor="#ffffff"
+			    		android:background="#009933"
+			    		android:layout_weight="1"
+			    		android:padding="5dip"
+			    		android:drawableBottom="@drawable/set"
+			    		android:gravity="top"
+		   	           />
+		   	     </LinearLayout>
+		   	    
+		   	    <!-- 2 -->
+		   	     <LinearLayout 
+		   	        android:layout_width="0dip" 
+			     	android:layout_height="fill_parent"
+			     	android:orientation="vertical"
+			     	android:layout_weight="1"
+			     	android:padding="5dip"
+		   	     >
+		   	        <TextView
+		   	             android:id="@+id/textKongtiao"
+		   	             android:layout_width="fill_parent"
+		   	             android:layout_height="wrap_content"
+		   	             android:background="#CC33FF"
+		   	             android:drawableBottom="@drawable/kongtiao"
+		   	             android:gravity="top"
+		   	             android:padding="10dip"
+		   	             android:text="@string/kongtiao"
+		   	             android:textColor="#ffffff"
+		   	             android:textSize="15sp" />
+
+		   	         <TextView
+		   	             android:id="@+id/textLight"
+		   	             android:layout_width="fill_parent"
+		   	             android:layout_height="109dp"
+		   	             android:layout_marginTop="10dip"
+		   	             android:background="#00CCFF"
+		   	             android:drawableBottom="@drawable/light"
+		   	             android:gravity="top"
+		   	             android:padding="5dip"
+		   	             android:text="@string/light"
+		   	             android:textColor="#ffffff"
+		   	             android:textSize="15sp" />
+
+		   	         <TextView
+		   	             android:id="@+id/textHealth"
+		   	             android:layout_width="fill_parent"
+		   	             android:layout_height="wrap_content"
+		   	             android:layout_marginTop="10dip"
+		   	             android:background="#99CC00"
+		   	             android:drawableBottom="@drawable/health"
+		   	             android:gravity="top"
+		   	             android:padding="5dip"
+		   	             android:text="@string/health"
+		   	             android:textColor="#ffffff"
+		   	             android:textSize="15sp" />
+
+		   	         <TextView
+		   	             android:id="@+id/textVideo"
+		   	             android:layout_width="fill_parent"
+		   	             android:layout_height="wrap_content"
+		   	             android:layout_marginTop="10dip"
+		   	             android:background="#FFCC00"
+		   	             android:drawableBottom="@drawable/video"
+		   	             android:gravity="top"
+		   	             android:padding="5dip"
+		   	             android:text="@string/video"
+		   	             android:textColor="#ffffff"
+		   	             android:textSize="15sp" />
+		   	     </LinearLayout>
+		   	 </TableRow>
+		  </TableLayout>    	 
+</LinearLayout>
+</ScrollView>

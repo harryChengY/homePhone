@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">我的智能家居</string>
+    <string name="wet">温湿度</string>
+    <string name="bingxiang">冰箱</string>
+    <string name="set">设置</string>
+    <string name="kongtiao">空调</string>
+    <string name="light">电灯</string>
+    <string name="health">健康</string>
+    <string name="video">视频监控</string>
+	
+    <style name="CustomWindowTitleBackground"> 
+    	<item name="android:background">@drawable/title_bg</item>
+	</style>
+
+	<style name="newstyle" parent="android:Theme"> 
+   		<item name="android:windowTitleSize">40dp</item> 
+    	<item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item> 
+	</style>
+	
+	<string name="set_net">设置网络</string>
+		<string name = "set_server_ip">服务器IP地址：</string>
+		<string name = "set_server_port">服务器端口号：</string>
+		<string name = "set_cid">电视网关标识：</string>
+	<string name="set_about">系统信息</string>
+		<string name="help">帮助</string>
+		<string name="about">关于</string>
+	<string name="editButton">修改设置</string>
+	<string name="setButton" >应用设置</string>
+	<string name="refresh">刷新</string>
+	
+	
+</resources>
