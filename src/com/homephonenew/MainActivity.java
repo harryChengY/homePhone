@@ -255,6 +255,28 @@ public class MainActivity extends Activity
 			}
 		});
 		
+        
 	}
+	
+	/*
+	 * 再按一次退出
+	 */
+	long waitTime = 2000;
+    long touchTime = 0;
+
+    @Override
+    public void onBackPressed()
+    {
+    	long currentTime = System.currentTimeMillis();
+    	if((currentTime-touchTime)>=waitTime)
+    	{
+    		Toast.makeText(this, "再按一次退出智能家居软件", Toast.LENGTH_SHORT).show();
+    		touchTime = currentTime;
+    	}
+    	else 
+    	{
+    		finish();
+    	}
+    }
 	
 }

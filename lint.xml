@@ -2,6 +2,7 @@
 <lint>
     <issue id="InefficientWeight">
         <ignore path="res/layout/activity_light.xml" />
+        <ignore path="res/layout/activity_wet.xml" />
     </issue>
     <issue id="ScrollViewSize">
         <ignore path="res/layout/activity_main.xml" />

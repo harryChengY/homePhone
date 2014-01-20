@@ -69,7 +69,7 @@ public class LightActivity extends Activity
 		}
 		
 		/*
-		 * 分离出环境数据，灯数据，电视IP地址
+		 * 分离出灯数据，电视网关IP地址
 		 */
 		int start,end;
 		String environments,tvIp,lights;
@@ -94,6 +94,7 @@ public class LightActivity extends Activity
 		
 		
 		
+		
 		/*
 		 *	下面从灯数据串中提取单个的灯ID存到灯数组lightArray中； 
 		 */
@@ -113,7 +114,7 @@ public class LightActivity extends Activity
 		final int count_lights_final = count_lights;
 		final String [] lightArray_final = lightArray;
 		/*
-		 * 下面用Adapter显示listview内容
+		 * 下面用BaseAdapter显示listview内容
 		 */
 		ListView list1 = (ListView) findViewById(R.id.ListView1);
 		
@@ -334,11 +335,11 @@ public class LightActivity extends Activity
 			// 设置对话框的标题
 			pdialog.setTitle("任务正在执行中");
 			// 设置对话框 显示的内容
-			pdialog.setMessage("任务正在执行中，敬请等待...");
+			pdialog.setMessage("任务正在执行中，请等待...");
 			// 设置对话框不能用“取消”按钮关闭
 			pdialog.setCancelable(false);
 			// 设置该进度条的最大进度值
-			pdialog.setMax(202);
+			pdialog.setMax(100);
 			// 设置对话框的进度条风格
 			pdialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
 			// 设置对话框的进度条是否显示进度
